@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-    
-    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    font-family: "Chakra Petch", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +10,7 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
 }
 
+/* Estilos para tamanhos de tela grandes (desktop) */
 header {
     background-color: #007BFF;
     color: white;
@@ -19,21 +19,21 @@ header {
 }
 
 h1{
-    font-size: 3.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    font-size: 3.5rem;
+    color: #222831;
+    text-align: center;
+    letter-spacing: 0.4rem;
 }
 
 li {
     padding: 10px;
-    font-size: 1rem; /* Tamanho da fonte */
-  }
+    font-size: 1rem;
+}
 
 p {
     padding: 10px;
-    font-size: 1rem; /* Tamanho da fonte */
-  }
+    font-size: 1rem;
+}
 
 main {
     display: flex;
@@ -60,30 +60,27 @@ main {
     flex-wrap: wrap;
 }
 
-/* Caixas de entrada de texto */
 .search-section input[type="text"], .new-profession-section input[type="text"] {
     width: 80%;
     padding: 10px;
     font-size: 16px;
     margin: 5px;
-    border-radius: 0.6rem; /* Borda arredondada */
-    
+    border-radius: 0.6rem;
 }
 
 button {
-    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+    background-color: #30475E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .resultados-pesquisa {
@@ -111,11 +108,82 @@ button:hover {
 }
 
 footer {
-    background-color: #007BFF; /* Cor de fundo do rodapé */
-    color: white; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
-    width: 100%; /* Largura total da página */
-    bottom: 0; /* Alinha ao fundo da página */
-    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+/* Media queries para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+    body {
+        height: auto; /* Ajusta a altura para se adaptar ao conteúdo */
+        background-color: #fff; /* Muda a cor de fundo para maior contraste */
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    main {
+        display: block;
+        padding: 10px;
+    }
+
+    .left-section, .right-section {
+        width: 100%; /* Faz as seções ocuparem toda a largura */
+        padding: 10px;
+    }
+
+    .right-section {
+        margin-top: 20px;
+    }
+
+    .search-section input[type="text"], .new-profession-section input[type="text"] {
+        width: 100%; /* Ocupa 100% da largura da tela */
+    }
+
+    button {
+        width: 100%; /* Botões ocupam toda a largura em telas menores */
+    }
+
+    .item-resultado {
+        width: 100%; /* Os itens de resultado ocupam toda a largura */
+    }
+
+    footer {
+        position: relative;
+        bottom: auto;
+    }
+}
+
+/* Media query para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .search-section, .new-profession-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-section input[type="text"], .new-profession-section input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .item-resultado {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
