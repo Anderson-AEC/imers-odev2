@@ -25,7 +25,7 @@ let dados = [
         exemplo: "Geração de ideias criativas, criação de logotipos e imagens, personalização de designs, otimização de layouts e análise de dados para entender as preferências dos consumidores."
     },
     {
-        titulo: "Eletricistar",
+        titulo: "Eletricista",
         descricao: "Instala, mantém e repara sistemas elétricos.",
         exemplo: "Manutenção preditiva de equipamentos, otimização de redes elétricas, análise de dados para identificar falhas e otimizar o consumo de energia."
     },

@@ -3,139 +3,145 @@
 
 /* Estiliza o corpo da página */
 body {
-    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #DDDDDD; /* Cor de fundo da página */
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Alinha os itens na vertical */
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão "Chakra Petch" */
+    background-color: #DDDDDD; /* Define a cor de fundo da página */
+    display: flex; /* Utiliza o layout Flexbox para organizar o conteúdo */
+    flex-direction: column; /* Alinha os itens do Flexbox na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
-    margin: 0;
-    padding: 0;
+    height: 100vh; /* A página ocupará a altura total da tela do navegador */
+    margin: 0; /* Remove a margem padrão do corpo */
+    padding: 0; /* Remove o preenchimento (padding) padrão do corpo */
 }
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    font-size: 2.5rem; /* Define o tamanho da fonte do título */
+    color: #222831; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    letter-spacing: 0.4rem; /* Adiciona espaçamento extra entre as letras */
 }
 
-.cabecalho__menu{
-    display: flex;
-    gap: 80px;
+/* Estiliza o menu no cabeçalho */
+.cabecalho__menu {
+    display: flex; /* Usa Flexbox para alinhar os itens do menu */
+    gap: 80px; /* Define um espaçamento de 80px entre os itens do menu */
 }
-.cabecalho__menu__link{
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--cor-terciaria);
-    text-decoration: none;
+
+/* Estiliza os links no menu do cabeçalho */
+.cabecalho__menu__link {
+    font-size: 1.5rem; /* Define o tamanho da fonte dos links do menu */
+    font-weight: 600; /* Aumenta a espessura da fonte */
+    color: var(--cor-terciaria); /* Aplica a cor do texto usando uma variável CSS */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
 }
 
 /* Estiliza as seções da página */
 section {
-    display: flex; /* Usa Flexbox para layout */
+    display: flex; /* Usa Flexbox para alinhar os elementos dentro da seção */
     flex-direction: column; /* Alinha os itens na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    align-items: center; /* Centraliza os itens na horizontal */
+    margin-bottom: 3rem; /* Adiciona uma margem inferior de 3 rem */
 }
 
-/* Estiliza os inputs dentro das seções */
+/* Estiliza os inputs (campos de texto) dentro das seções */
 section input {
-    width: 30rem; /* Largura dos inputs */
-    border: none; /* Remove a borda padrão */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 1.5rem; /* Borda arredondada */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: #45474B; /* Cor do texto */
-    font-size: 1rem; /* Tamanho da fonte */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
+    width: 30rem; /* Define a largura dos inputs como 30 rem */
+    border: none; /* Remove a borda padrão dos inputs */
+    padding: 1rem; /* Adiciona um preenchimento interno de 1 rem */
+    border-radius: 1.5rem; /* Adiciona bordas arredondadas */
+    margin-bottom: 1rem; /* Adiciona uma margem inferior de 1 rem */
+    color: #45474B; /* Define a cor do texto dentro do input */
+    font-size: 1rem; /* Define o tamanho da fonte dentro do input */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total */
 }
 
 /* Estiliza os botões dentro das seções */
 section button {
-    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    padding: 0.8rem 1.2rem; /* Define o preenchimento interno do botão */
+    border: none; /* Remove a borda padrão dos botões */
+    border-radius: 1.5rem; /* Adiciona bordas arredondadas aos botões */
+    background-color: #30475E; /* Define a cor de fundo do botão */
+    color: #F5F7F8; /* Define a cor do texto do botão */
+    font-size: 1rem; /* Define o tamanho da fonte do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
+/* Estiliza a caixa de resultados de pesquisa */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */
+    width: 60rem; /* Define a largura máxima da caixa de resultados */
+    height: 46vh; /* Define a altura da caixa como 46% da altura da tela */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
+    margin-top: 1rem; /* Adiciona uma margem superior de 1 rem */
+    padding: 1rem; /* Adiciona um preenchimento interno de 1 rem */
+    border-radius: 0.6rem; /* Define bordas arredondadas */
 }
 
-/* Estiliza cada item de resultado */
+/* Estiliza cada item individual dentro da caixa de resultados */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
-    border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background: #FFFFFF; /* Define a cor de fundo dos itens como branco */
+    border-radius: 0.6rem; /* Define bordas arredondadas */
+    padding: 1rem; /* Adiciona um preenchimento interno de 1 rem */
+    margin-bottom: 1rem; /* Adiciona uma margem inferior de 1 rem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aplica uma sombra leve ao redor dos itens */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    font-size: 1.5rem; /* Define o tamanho da fonte dos títulos dentro dos resultados */
+    color: #222831; /* Define a cor do texto dos títulos */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #30475E; /* Cor do texto dos links */
+    color: #30475E; /* Define a cor do texto dos links */
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
+/* Estiliza os links ao passar o mouse sobre eles */
 .item-resultado a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
-    margin: 0.5rem 0; /* Margem acima e abaixo */
+    color: #45474B; /* Define a cor do texto da descrição */
+    margin: 0.5rem 0; /* Adiciona margem acima e abaixo da descrição */
 }
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
-    width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
-    bottom: 0; /* Alinha ao fundo da página */
-    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #F5F7F8; /* Define a cor de fundo do rodapé */
+    color: #45474B; /* Define a cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 0; /* Remove qualquer preenchimento adicional */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+    position: absolute; /* Define o rodapé na posição absoluta */
+    bottom: 0; /* Coloca o rodapé no final da página */
+    font-size: 1rem; /* Define o tamanho da fonte do rodapé */
 }
 
-.textosaibamais{
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+/* Estiliza a caixa de texto "Saiba Mais" */
+.textosaibamais {
+    width: 60rem; /* Define a largura máxima da caixa */
+    height: 46vh; /* Define a altura máxima como 46% da tela */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
+    margin-top: 1rem; /* Adiciona uma margem superior de 1 rem */
+    padding: 1rem; /* Adiciona um preenchimento interno de 1 rem */
+    border-radius: 0.6rem; /* Define bordas arredondadas */
+}
+
+/* Estiliza a seção de apresentação */
+.apresentacao {
+    width: 60rem; /* Define a largura máxima da seção de apresentação */
+    height: 46vh; /* Define a altura como 46% da tela */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */
+    margin-top: 1rem; /* Adiciona uma margem superior de 1 rem */
+    padding: 1rem; /* Adiciona um preenchimento interno de 1 rem */
+    border-radius: 0.6rem; /* Define bordas arredondadas */
 }
 
-.apresentacao{
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */
-}
-
-.apresentacao__imagem{
-    width: 20%;
+/* Estiliza a imagem dentro da apresentação */
+.apresentacao__imagem {
+    width: 20%; /* Define a largura da imagem como 20% da área disponível */
 }
