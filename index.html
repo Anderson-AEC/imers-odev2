@@ -4,62 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>AgoraEuConserto</title>
+    <link rel="stylesheet" href="style.css">
+    <title>I.A.gora</title>
 </head>
 
 <body>
-    
     <header>
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="saibaMais.html">Saiba mais</a>
+            <a class="cabecalho__menu__link" href="sobreMim.html">Sobre mim</a>
+        </nav>
         <h1>I.A. no dia a dia das profissões</h1>
     </header>
-
     <main>
-        <section class="left-section">
-            <div class="search-section">
-                <input type="text" id="search-input" placeholder="Como essa profissão usa I.A.">
-                <button id="search-button">Pesquisar</button>
-            </div>
-
-            <div class="new-profession-section">
-                <input type="text" id="new-profession-name" placeholder="Nome da profissão">
-                <input type="text" id="new-profession-desc" placeholder="Descrição da profissão">
-                <input type="text" id="new-profession-example" placeholder="Exemplo de uso de I.A.">
-                <button id="add-profession-button">Adicionar Profissão</button>
-            </div>
-
-            <section class="resultados-pesquisa" id="resultados-pesquisa">
-                <!-- Profissões serão inseridas dinamicamente aqui -->
-            </section>
+        <section>
+            <input type="text" placeholder="Digite o nome da profissão">
+            <button onclick="pesquisar()">Pesquisar</button>
         </section>
-
-        <section class="right-section">
-            <h2>Inteligencia Artificial</h2>
-        
-            <p>
-                A Inteligência Artificial (IA) está transformando o mundo a passos largos, e cada vez mais surgem novas aplicações e descobertas fascinantes. Vamos explorar algumas curiosidades sobre essa tecnologia:
-                <ul>
-                    <li><strong>IA que "sonha":</strong>  Alguns modelos de IA são capazes de gerar imagens e vídeos a partir de dados que foram treinados. Essas criações, muitas vezes surrealistas e intrigantes, são como "sonhos" da máquina, revelando as complexidades das redes neurais.</li>
-                    <li><strong>IA que compõe música:</strong> Algoritmos de IA podem compor músicas em diversos estilos, desde clássicos a pop. Eles são capazes de aprender padrões musicais e criar novas melodias e harmonias.</li>
-                    <li> <strong>IA que escreve poesia:</strong> A IA também está sendo usada para gerar textos criativos, como poemas e roteiros. Algumas máquinas são capazes de imitar o estilo de escritores famosos, enquanto outras criam obras originais.</li>
-                    <li><strong>IA que "sente" emoções:</strong> Embora as máquinas não tenham sentimentos no sentido humano, alguns modelos de IA são capazes de identificar e simular emoções humanas a partir de dados como expressões faciais e tom de voz.</li>
-                    <li><strong>IA que joga xadrez e GO melhor que humanos:</strong> A IA já superou os melhores jogadores de xadrez e GO, demonstrando uma capacidade de cálculo e estratégia que supera a mente humana.</li>
-                    <li><strong>IA que dirige carros:</strong> Carros autônomos, equipados com sensores e câmeras, utilizam IA para navegar em estradas, identificar obstáculos e tomar decisões em tempo real.</li>
-                    <li><strong>IA que cria arte:</strong> A IA está sendo usada para criar obras de arte únicas, como pinturas, esculturas e música. Essas obras desafiam a nossa compreensão sobre o que é arte e quem é um artista.</li>
-                </ul>
-            </p>
-            <p>Esses são apenas alguns exemplos do potencial da IA. À medida que a tecnologia avança, podemos esperar ainda mais inovações e aplicações surpreendentes.</p>
-            <p>
-                É importante ressaltar que a IA não substituirá completamente essas profissões, mas sim transformará a forma como elas são exercidas. As pessoas que trabalharem em conjunto com a IA, desenvolvendo novas habilidades e conhecimentos, estarão mais bem preparadas para o futuro do trabalho.
-            </p>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
         </section>
     </main>
-
     <footer>
-        <p>2024 - Imersão DEV e Anderson</p>
-        <p>Entre em contato pelo email: agoraeuconserto@gmail.com</p>
+        <p>&copy; 2024 Desenvolvido por Anderson com apoio da Alura e GEMINI.</p>
     </footer>
-
+    <script src="dados.js"></script>
     <script src="app.js"></script>
 </body>
 
