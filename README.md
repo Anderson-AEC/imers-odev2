@@ -18,6 +18,3 @@ A aplicação tem como objetivo demonstrar a aplicação da IA em diversas profi
 - **CSS:** Estilização e design da interface.
 - **JavaScript:** Funcionalidade de busca e manipulação do DOM.
 - **GEMINI:** Ferramenta utilizada para desenvolvimento e organização do projeto.
-
-## Estrutura do Projeto
-
