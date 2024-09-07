@@ -3,6 +3,10 @@
 
 /* Estiliza o corpo da página */
 body {
+    background-image: url('img/fundo\ de\ tela.jpeg');
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão "Chakra Petch" */
     background-color: #DDDDDD; /* Define a cor de fundo da página */
     display: flex; /* Utiliza o layout Flexbox para organizar o conteúdo */
@@ -75,11 +79,12 @@ section button {
     margin-top: 1rem; /* Adiciona uma margem superior de 1 rem */
     padding: 1rem; /* Adiciona um preenchimento interno de 1 rem */
     border-radius: 0.6rem; /* Define bordas arredondadas */
+    
 }
 
 /* Estiliza cada item individual dentro da caixa de resultados */
 .item-resultado {
-    background: #FFFFFF; /* Define a cor de fundo dos itens como branco */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo branca com 80% de opacidade */
     border-radius: 0.6rem; /* Define bordas arredondadas */
     padding: 1rem; /* Adiciona um preenchimento interno de 1 rem */
     margin-bottom: 1rem; /* Adiciona uma margem inferior de 1 rem */
@@ -90,6 +95,7 @@ section button {
 .item-resultado h2 {
     font-size: 1.5rem; /* Define o tamanho da fonte dos títulos dentro dos resultados */
     color: #222831; /* Define a cor do texto dos títulos */
+    font-weight: 500; /* Aumenta a espessura da fonte */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -112,7 +118,7 @@ section button {
 /* Estiliza o rodapé da página */
 footer {
     background-color: #F5F7F8; /* Define a cor de fundo do rodapé */
-    color: #45474B; /* Define a cor do texto do rodapé */
+    color: black; /* Define a cor do texto do rodapé */
     text-align: center; /* Centraliza o texto no rodapé */
     padding: 0; /* Remove qualquer preenchimento adicional */
     width: 100%; /* Faz o rodapé ocupar toda a largura da página */
@@ -123,25 +129,43 @@ footer {
 
 /* Estiliza a caixa de texto "Saiba Mais" */
 .textosaibamais {
+    font-size: 1.2rem; /* Define o tamanho da fonte dos links do menu */
+    font-weight: 600; /* Aumenta a espessura da fonte */
+    color: black; /* Define a cor do texto do rodapé */
     width: 60rem; /* Define a largura máxima da caixa */
     height: 46vh; /* Define a altura máxima como 46% da tela */
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
     margin-top: 1rem; /* Adiciona uma margem superior de 1 rem */
     padding: 1rem; /* Adiciona um preenchimento interno de 1 rem */
     border-radius: 0.6rem; /* Define bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.4); /* Cor de fundo branca com 80% de opacidade */
+    color: #333; /* Cor do texto */
+ 
+   
 }
 
 /* Estiliza a seção de apresentação */
 .apresentacao {
+    
+    font-size: 1.2rem; /* Define o tamanho da fonte dos links do menu */
+    font-weight: 600; /* Aumenta a espessura da fonte */
+    color: #45474B; /* Define a cor do texto do rodapé */
     width: 60rem; /* Define a largura máxima da seção de apresentação */
     height: 46vh; /* Define a altura como 46% da tela */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Adiciona uma margem superior de 1 rem */
     padding: 1rem; /* Adiciona um preenchimento interno de 1 rem */
     border-radius: 0.6rem; /* Define bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.4); /* Cor de fundo branca com 80% de opacidade */
+    color: #333; /* Cor do texto */
 }
 
 /* Estiliza a imagem dentro da apresentação */
 .apresentacao__imagem {
     width: 20%; /* Define a largura da imagem como 20% da área disponível */
+}
+
+.apresentacao__conteudo__titulo {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Define a cor do texto dos links */
 }
