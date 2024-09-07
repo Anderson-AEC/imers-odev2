@@ -10,7 +10,7 @@ let dados = [
         exemplo: "Criação de materiais didáticos personalizados, plataformas de ensino online inteligentes, avaliação automatizada de trabalhos, tutoria virtual e análise de dados para identificar dificuldades dos alunos."
     },
     {
-        titulo: "Médico",
+        titulo: "Medico",
         descricao: "Diagnostica, trata e previne doenças.",
         exemplo: "Análise de imagens médicas para detecção precoce de doenças, desenvolvimento de novos medicamentos, criação de assistentes virtuais para agendamento de consultas e fornecimento de informações médicas, e personalização de tratamentos."
     },
