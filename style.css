@@ -26,6 +26,12 @@ h1 {
     text-align: center; /* Centraliza o texto */
     letter-spacing: 0.4rem; /* Adiciona espaçamento extra entre as letras */
 }
+.textoAbaixodotitulo {
+    font-size: 1.5rem; /* Define o tamanho da fonte do título */
+    color: #222831; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    letter-spacing: 0.4rem; /* Adiciona espaçamento extra entre as letras */
+}
 
 /* Estiliza o menu no cabeçalho */
 .cabecalho__menu {
@@ -195,7 +201,7 @@ footer {
 /* Responsividade para celulares */
 @media (max-width: 480px) {
 
-    h1 {
+    h1, {
         font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
         letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
     }
